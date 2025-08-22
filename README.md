@@ -18,7 +18,7 @@
 
 ## 📈 Contribution Activity
 
-### 🗓️ This Month's Contributions
+### 🗺️ This Month's Contributions
 ![Contribution Graph](https://activity-graph.herokuapp.com/graph?username=olaitanojo&theme=react-dark&area=true&hide_border=true)
 
 ### 📋 Recent Activity Summary
@@ -80,6 +80,3 @@ Other        1 hr 10 mins    █░░░░░░░░░░░░░░░░
 ---
 
 *Last updated: Auto-updated every 6 hours via GitHub Actions*
-
-
-
