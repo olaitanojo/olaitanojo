@@ -1,4 +1,4 @@
-# Hi there! 👋 I'm [olaitanojo]
+# Hi there! 👋 I'm olaitanojo
 
 ## 🔥 GitHub Stats & Activity Report
 
