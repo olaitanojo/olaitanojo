@@ -3,7 +3,7 @@
 <div align="center">
   
 [![Portfolio](https://img.shields.io/badge/Portfolio-SRE%20Projects-blue?style=for-the-badge&logo=github)](https://github.com/olaitanojo/SRE-Portfolio)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourprofile)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/deen-ojo-166a20a4)
 [![Email](https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:olaitan.ojo@outlook.com)
 
 </div>
@@ -181,9 +181,8 @@ I'm a passionate **Site Reliability Engineer** with expertise in building scalab
 I'm always interested in discussing **SRE practices**, **platform engineering**, **reliability challenges**, and **innovative solutions**. Let's connect and share knowledge!
 
 [![Portfolio](https://img.shields.io/badge/📁_Portfolio-SRE_Projects-4285F4?style=for-the-badge)](https://github.com/olaitanojo/SRE-Portfolio)
-[![LinkedIn](https://img.shields.io/badge/💼_LinkedIn-Connect-0077B5?style=for-the-badge)](https://linkedin.com/in/yourprofile)
+[![LinkedIn](https://img.shields.io/badge/💼_LinkedIn-Connect-0077B5?style=for-the-badge)](https://www.linkedin.com/in/deen-ojo-166a20a4)
 [![Email](https://img.shields.io/badge/📧_Email-Contact-EA4335?style=for-the-badge)](mailto:olaitan.ojo@outlook.com)
-[![Twitter](https://img.shields.io/badge/🐦_Twitter-Follow-1DA1F2?style=for-the-badge)](https://twitter.com/yourusername)
 
 </div>
 
