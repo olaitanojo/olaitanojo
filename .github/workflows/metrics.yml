@@ -13,12 +13,14 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      actions: read
+      metadata: read
     steps:
       - name: General
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.general.svg
-          token: ${{ secrets.METRICS_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           user: olaitanojo
           template: classic
           config_timezone: America/New_York
@@ -29,7 +31,7 @@ jobs:
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.plugin.activity.svg
-          token: ${{ secrets.METRICS_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           user: olaitanojo
           template: classic
           base: ""
@@ -43,7 +45,7 @@ jobs:
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.plugin.languages.activity.svg
-          token: ${{ secrets.METRICS_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           user: olaitanojo
           template: classic
           base: ""
@@ -60,7 +62,7 @@ jobs:
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.plugin.achievements.svg
-          token: ${{ secrets.METRICS_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           user: olaitanojo
           template: classic
           base: ""
