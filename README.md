@@ -8,7 +8,7 @@
 
 </div>
 
-## 🚀 Site Reliability Engineer | Platform Engineering | DevOps
+## 🚀 Site Reliability Engineer | Platform Engineer | DevOps Engineer
 
 I'm a passionate **Site Reliability Engineer** with expertise in building scalable, reliable systems and implementing SRE best practices. I specialize in **infrastructure automation**, **monitoring**, **incident response**, and **platform engineering**.
 
