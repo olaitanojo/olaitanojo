@@ -145,6 +145,13 @@ I'm a passionate **Site Reliability Engineer** with expertise in building scalab
 
 ---
 
+## 📝 Recent Activity
+
+<!--START_SECTION:activity-->
+<!--END_SECTION:activity-->
+
+---
+
 ## 📈 Current Focus & Learning
 
 🔭 **Currently Working On:**
