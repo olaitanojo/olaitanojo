@@ -16,8 +16,6 @@ jobs:
     permissions:
       contents: write
       actions: read
-      metadata: read
-      statuses: read
       pull-requests: read
       
     steps:
