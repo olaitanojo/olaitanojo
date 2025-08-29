@@ -23,6 +23,49 @@ I'm a passionate **Site Reliability Engineer** with expertise in building scalab
 
 ## 🏆 Featured SRE Portfolio Projects
 
+### 🏗️ Portfolio Architecture Overview
+```mermaid
+graph TB
+    subgraph "SRE Core Competencies"
+        A1[Observability & Monitoring]
+        A2[Infrastructure Automation]
+        A3[Incident Response]
+        A4[Deployment Engineering]
+        A5[Capacity Planning]
+    end
+    
+    subgraph "Portfolio Projects"
+        B1[Prometheus Monitoring Stack]
+        B2[Infrastructure as Code]
+        B3[Incident Response Toolkit]
+        B4[CI/CD Pipeline Platform]
+        B5[Capacity Planning System]
+        B6[Log Aggregation System]
+    end
+    
+    subgraph "Technology Ecosystem"
+        C1[Cloud Platforms]
+        C2[Container Orchestration]
+        C3[Monitoring Tools]
+        C4[Automation Frameworks]
+        C5[ML/AI Integration]
+    end
+    
+    A1 --> B1
+    A1 --> B6
+    A2 --> B2
+    A3 --> B3
+    A4 --> B4
+    A5 --> B5
+    
+    B1 --> C3
+    B2 --> C1
+    B3 --> C4
+    B4 --> C2
+    B5 --> C5
+    B6 --> C3
+```
+
 <div align="center">
 
 ### 📊 [Production Monitoring Stack](https://github.com/olaitanojo/prometheus-monitoring-stack)
