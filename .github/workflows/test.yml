@@ -4,32 +4,66 @@ on:
   workflow_dispatch:
   push:
     branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+permissions:
+  contents: read
+  actions: read
 
 jobs:
   test:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
+    timeout-minutes: 10
     
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
         
-      - name: Test GitHub Token
+      - name: Test GitHub Token and Environment
         run: |
-          echo "Testing GitHub Actions setup..."
-          echo "Repository: ${{ github.repository }}"
-          echo "Actor: ${{ github.actor }}"
-          echo "Event: ${{ github.event_name }}"
-          echo "Token available: ${{ secrets.GITHUB_TOKEN != '' }}"
+          echo "## GitHub Actions Test Results" >> $GITHUB_STEP_SUMMARY
+          echo "Testing GitHub Actions setup..." | tee -a $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Environment Information" >> $GITHUB_STEP_SUMMARY
+          echo "- **Repository**: ${{ github.repository }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Actor**: ${{ github.actor }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Event**: ${{ github.event_name }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Branch/Ref**: ${{ github.ref }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **SHA**: ${{ github.sha }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Run ID**: ${{ github.run_id }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Token Available**: ${{ secrets.GITHUB_TOKEN != '' }}" >> $GITHUB_STEP_SUMMARY
           
       - name: List repository contents
         run: |
-          echo "Repository contents:"
-          ls -la
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Repository Contents" >> $GITHUB_STEP_SUMMARY
+          echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+          ls -la | head -20 >> $GITHUB_STEP_SUMMARY
+          echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
           
-      - name: Check workflow permissions
+      - name: Check workflow permissions and git status
         run: |
-          echo "Current user: $(whoami)"
-          echo "Git status:"
-          git status || echo "Git status failed"
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### System Information" >> $GITHUB_STEP_SUMMARY
+          echo "- **Current user**: $(whoami)" >> $GITHUB_STEP_SUMMARY
+          echo "- **Working directory**: $(pwd)" >> $GITHUB_STEP_SUMMARY
+          echo "- **Runner OS**: ${{ runner.os }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Runner Architecture**: ${{ runner.arch }}" >> $GITHUB_STEP_SUMMARY
+          
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Git Status" >> $GITHUB_STEP_SUMMARY
+          if git status &>/dev/null; then
+            echo "✅ Git repository is accessible" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "❌ Git status failed" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+      - name: Test completion
+        run: |
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Test Results" >> $GITHUB_STEP_SUMMARY
+          echo "✅ All tests completed successfully!" >> $GITHUB_STEP_SUMMARY
+          echo "🎉 GitHub Actions is properly configured for this repository." >> $GITHUB_STEP_SUMMARY

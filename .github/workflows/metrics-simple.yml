@@ -1,4 +1,4 @@
-name: GitHub Profile Metrics (Simple)
+name: GitHub Profile Metrics
 
 on:
   # Schedule updates (every day at 00:00)
@@ -10,29 +10,34 @@ on:
   push:
     branches: ["main"]
 
+permissions:
+  contents: write
+  actions: read
+  pull-requests: read
+
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      actions: read
-      pull-requests: read
-      
+    timeout-minutes: 30
+    
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 1  # Shallow clone for performance
           
       - name: Generate GitHub metrics
         uses: lowlighter/metrics@latest
         with:
           filename: github-metrics.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
           user: olaitanojo
           template: classic
           base: header, activity, community, repositories, metadata
           config_timezone: America/New_York
+          config_retries: 3
+          config_retries_delay: 300
           
           # Basic plugins
           plugin_lines: yes
@@ -58,10 +63,34 @@ jobs:
           plugin_languages_recent_load: 300
           plugin_languages_skipped: html, css
           
-      - name: Deploy to GitHub Pages (optional)
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Verify generated metrics
+        run: |
+          if [ -f "github-metrics.svg" ]; then
+            echo "✅ Metrics file generated successfully"
+            ls -la github-metrics.svg
+          else
+            echo "❌ Metrics file not found"
+            exit 1
+          fi
+          
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4  # Updated from v3
         if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: .
           keep_files: true
+          enable_jekyll: false
+          allow_empty_commit: false
+          force_orphan: false
+          
+      - name: Generate summary
+        if: always()
+        run: |
+          echo "## GitHub Metrics Generation Summary" >> $GITHUB_STEP_SUMMARY
+          if [ -f "github-metrics.svg" ]; then
+            echo "✅ Metrics generated successfully" >> $GITHUB_STEP_SUMMARY
+            echo "📊 File size: $(du -h github-metrics.svg | cut -f1)" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "❌ Metrics generation failed" >> $GITHUB_STEP_SUMMARY
+          fi
