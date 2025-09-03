@@ -57,16 +57,16 @@
             </section>
             <section class="column">
                 <h3 class="field">Recently used languages</h3>
-                <small>estimation from 1.09mb of code in 239 edited files across 177 commits over last 10 days</small>
+                <small>estimation from 1.17mb of code in 264 edited files across 179 commits over last 11 days</small>
                 <svg class="bar" xmlns="http://www.w3.org/2000/svg" width="460" height="8">
                     <mask id="languages-bar">
                         <rect x="0" y="0" width="460" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="406.78376052311376" height="8" fill="#3572A5"/>
-                    <rect mask="url(#languages-bar)" x="406.78376052311376" y="0" width="41.861515328380506" height="8" fill="#844FBA"/>
-                    <rect mask="url(#languages-bar)" x="448.6452758514942" y="0" width="6.950943246906131" height="8" fill="#f34b7d"/>
-                    <rect mask="url(#languages-bar)" x="455.59621909840035" y="0" width="4.403780901599612" height="8" fill="#012456"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="386.6778470296609" height="8" fill="#3572A5"/>
+                    <rect mask="url(#languages-bar)" x="386.6778470296609" y="0" width="38.886114218894654" height="8" fill="#844FBA"/>
+                    <rect mask="url(#languages-bar)" x="425.56396124855553" y="0" width="27.97914938879406" height="8" fill="#012456"/>
+                    <rect mask="url(#languages-bar)" x="453.54311063734957" y="0" width="6.456889362650389" height="8" fill="#f34b7d"/>
                 </svg>
                 <div class="row fill-width">
                     <section>
@@ -78,20 +78,20 @@
                                 Python
                             </div>
                             <small>
-                                <div>357 kB</div>
-                                <div>88.43%</div>
+                                <div>365 kB</div>
+                                <div>84.06%</div>
                             </small>
                         </div>
                         <div class="field language details">
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                    <path fill="#f34b7d" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                                    <path fill="#012456" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                                 </svg>
-                                C++
+                                PowerShell
                             </div>
                             <small>
-                                <div>6.11 kB</div>
-                                <div>1.51%</div>
+                                <div>26.4 kB</div>
+                                <div>6.08%</div>
                             </small>
                         </div>
                     </section>
@@ -105,19 +105,19 @@
                             </div>
                             <small>
                                 <div>36.8 kB</div>
-                                <div>9.1%</div>
+                                <div>8.45%</div>
                             </small>
                         </div>
                         <div class="field language details">
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                    <path fill="#012456" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                                    <path fill="#f34b7d" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                                 </svg>
-                                PowerShell
+                                C++
                             </div>
                             <small>
-                                <div>3.87 kB</div>
-                                <div>0.96%</div>
+                                <div>6.11 kB</div>
+                                <div>1.4%</div>
                             </small>
                         </div>
                     </section>
