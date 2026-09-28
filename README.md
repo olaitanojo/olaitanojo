@@ -191,6 +191,8 @@ graph TB
 ## 📝 Recent Activity
 
 <!--START_SECTION:activity-->
+1. 🎉 Merged PR [#1](https://github.com/olaitanojo/2027-AI-College-Jobs/pull/1) in [olaitanojo/2027-AI-College-Jobs](https://github.com/olaitanojo/2027-AI-College-Jobs)
+2. 💪 Opened PR [#1](https://github.com/olaitanojo/2027-AI-College-Jobs/pull/1) in [olaitanojo/2027-AI-College-Jobs](https://github.com/olaitanojo/2027-AI-College-Jobs)
 <!--END_SECTION:activity-->
 
 ---
