@@ -15,7 +15,7 @@ permissions:
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 15
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -30,20 +30,11 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
           user: olaitanojo
           template: classic
-          base: header, activity, community, repositories, metadata
+          base: header, community, repositories, metadata
           config_timezone: America/New_York
-          config_retries: 3
-          config_retries_delay: 300
-          plugin_lines: yes
-          plugin_lines_sections: base
-          plugin_lines_repositories_limit: 4
-          plugin_lines_history_limit: 1
-          plugin_activity: yes
-          plugin_activity_limit: 5
-          plugin_activity_days: 14
-          plugin_activity_filter: all
-          plugin_activity_visibility: all
-          # Language recent-activity analysis is disabled until the upstream action fixes missing commit metadata handling.
+          config_retries: 1
+          config_retries_delay: 60
+          # Recent activity, line history, and language analysis are disabled because the current action image cannot handle deleted or incomplete GitHub event metadata.
 
       - name: Verify generated metrics
         run: |
