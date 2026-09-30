@@ -1,12 +1,9 @@
 name: GitHub Profile Metrics
 
 on:
-  # Schedule updates (every day at 00:00)
-  schedule: 
+  schedule:
     - cron: "0 0 * * *"
-  # Manual trigger
   workflow_dispatch:
-  # Trigger on push to main
   push:
     branches: ["main"]
 
@@ -19,14 +16,13 @@ jobs:
   github-metrics:
     runs-on: ubuntu-latest
     timeout-minutes: 30
-    
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          fetch-depth: 1  # Shallow clone for performance
-          
+          fetch-depth: 1
+
       - name: Generate GitHub metrics
         uses: lowlighter/metrics@latest
         with:
@@ -38,43 +34,29 @@ jobs:
           config_timezone: America/New_York
           config_retries: 3
           config_retries_delay: 300
-          
-          # Basic plugins
           plugin_lines: yes
           plugin_lines_sections: base
           plugin_lines_repositories_limit: 4
           plugin_lines_history_limit: 1
-          
-          # Activity plugin
           plugin_activity: yes
           plugin_activity_limit: 5
           plugin_activity_days: 14
           plugin_activity_filter: all
           plugin_activity_visibility: all
-          
-          # Languages plugin  
-          plugin_languages: yes
-          plugin_languages_sections: most-used
-          plugin_languages_colors: github
-          plugin_languages_threshold: 0%
-          plugin_languages_limit: 8
-          plugin_languages_recent_categories: markup, programming
-          plugin_languages_recent_days: 14
-          plugin_languages_recent_load: 300
-          plugin_languages_skipped: html, css
-          
+          # Language recent-activity analysis is disabled until the upstream action fixes missing commit metadata handling.
+
       - name: Verify generated metrics
         run: |
           if [ -f "github-metrics.svg" ]; then
-            echo "✅ Metrics file generated successfully"
+            echo "Metrics file generated successfully"
             ls -la github-metrics.svg
           else
-            echo "❌ Metrics file not found"
+            echo "Metrics file not found"
             exit 1
           fi
-          
+
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4  # Updated from v3
+        uses: peaceiris/actions-gh-pages@v4
         if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -83,14 +65,14 @@ jobs:
           enable_jekyll: false
           allow_empty_commit: false
           force_orphan: false
-          
+
       - name: Generate summary
         if: always()
         run: |
           echo "## GitHub Metrics Generation Summary" >> $GITHUB_STEP_SUMMARY
           if [ -f "github-metrics.svg" ]; then
-            echo "✅ Metrics generated successfully" >> $GITHUB_STEP_SUMMARY
-            echo "📊 File size: $(du -h github-metrics.svg | cut -f1)" >> $GITHUB_STEP_SUMMARY
+            echo "Metrics generated successfully" >> $GITHUB_STEP_SUMMARY
+            echo "File size: $(du -h github-metrics.svg | cut -f1)" >> $GITHUB_STEP_SUMMARY
           else
-            echo "❌ Metrics generation failed" >> $GITHUB_STEP_SUMMARY
+            echo "Metrics generation failed" >> $GITHUB_STEP_SUMMARY
           fi
