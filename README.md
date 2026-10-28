@@ -2,8 +2,8 @@
 
 <div align="center">
   
-[![Portfolio](https://img.shields.io/badge/Portfolio-SRE%20Projects-blue?style=for-the-badge&logo=github)](https://github.com/olaitanojo/SRE-Portfolio)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/deen-ojo-166a20a4)
+[![Portfolio](https://img.shields.io/badge/Portfolio-SRE%20Projects-blue?style=for-the-badge&logo=github)](https://github.com/deenojo/SRE-Portfolio)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/deenojo)
 [![Email](https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:olaitan.ojo@outlook.com)
 
 </div>
@@ -68,27 +68,27 @@ graph TB
 
 <div align="center">
 
-### 📊 [Production Monitoring Stack](https://github.com/olaitanojo/prometheus-monitoring-stack)
+### 📊 [Production Monitoring Stack](https://github.com/deenojo/prometheus-monitoring-stack)
 **Prometheus + Grafana + AlertManager**  
 *Enterprise-grade monitoring with SLI/SLO tracking and intelligent alerting*
 
-### 🚨 [Incident Response Toolkit](https://github.com/olaitanojo/incident-response-toolkit)  
+### 🚨 [Incident Response Toolkit](https://github.com/deenojo/incident-response-toolkit)  
 **Chaos Engineering + Incident Management**  
 *Complete incident response platform with automated chaos experiments*
 
-### 📝 [Log Aggregation System](https://github.com/olaitanojo/log-aggregation-system)
+### 📝 [Log Aggregation System](https://github.com/deenojo/log-aggregation-system)
 **ELK Stack + Real-time Analysis**  
 *Centralized logging with ML-powered anomaly detection*
 
-### 📈 [Capacity Planning Platform](https://github.com/olaitanojo/capacity-planning-system)
+### 📈 [Capacity Planning Platform](https://github.com/deenojo/capacity-planning-system)
 **ML Forecasting + Cost Optimization**  
 *AI-powered resource planning with 40% cost reduction*
 
-### 🏗️ [Infrastructure as Code](https://github.com/olaitanojo/infrastructure-as-code)
+### 🏗️ [Infrastructure as Code](https://github.com/deenojo/infrastructure-as-code)
 **Terraform + Kubernetes + Multi-Cloud**  
 *Production-ready IaC with advanced EKS modules and governance*
 
-### 🚀 [CI/CD Pipeline Platform](https://github.com/olaitanojo/ci-cd-pipeline)
+### 🚀 [CI/CD Pipeline Platform](https://github.com/deenojo/ci-cd-pipeline)
 **Blue-Green + Canary + GitHub Actions**  
 *Enterprise CI/CD with advanced deployment strategies*
 
@@ -100,15 +100,15 @@ graph TB
 
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=olaitanojo&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=deenojo&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=olaitanojo&layout=compact&theme=tokyonight&hide_border=true&langs_count=8)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=deenojo&layout=compact&theme=tokyonight&hide_border=true&langs_count=8)
 
 </div>
 
 <div align="center">
 
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=olaitanojo&theme=tokyonight&hide_border=true)
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=deenojo&theme=tokyonight&hide_border=true)
 
 </div>
 
@@ -191,8 +191,8 @@ graph TB
 ## 📝 Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🗣 Commented on [#1](https://github.com/olaitanojo/olaitanojo/issues/1#issuecomment-5905389218) in [olaitanojo/olaitanojo](https://github.com/olaitanojo/olaitanojo)
-2. 🔒 Closed issue [#1](https://github.com/olaitanojo/olaitanojo/issues/1) in [olaitanojo/olaitanojo](https://github.com/olaitanojo/olaitanojo)
+1. 🗣 Commented on [#1](https://github.com/deenojo/deenojo/issues/1#issuecomment-5905389218) in [deenojo/deenojo](https://github.com/deenojo/deenojo)
+2. 🔒 Closed issue [#1](https://github.com/deenojo/deenojo/issues/1) in [deenojo/deenojo](https://github.com/deenojo/deenojo)
 <!--END_SECTION:activity-->
 
 ---
@@ -232,8 +232,8 @@ graph TB
 
 I'm always interested in discussing **SRE practices**, **platform engineering**, **reliability challenges**, and **innovative solutions**. Let's connect and share knowledge!
 
-[![Portfolio](https://img.shields.io/badge/📁_Portfolio-SRE_Projects-4285F4?style=for-the-badge)](https://github.com/olaitanojo/SRE-Portfolio)
-[![LinkedIn](https://img.shields.io/badge/💼_LinkedIn-Connect-0077B5?style=for-the-badge)](https://www.linkedin.com/in/deen-ojo-166a20a4)
+[![Portfolio](https://img.shields.io/badge/📁_Portfolio-SRE_Projects-4285F4?style=for-the-badge)](https://github.com/deenojo/SRE-Portfolio)
+[![LinkedIn](https://img.shields.io/badge/💼_LinkedIn-Connect-0077B5?style=for-the-badge)](https://www.linkedin.com/in/deenojo)
 [![Email](https://img.shields.io/badge/📧_Email-Contact-EA4335?style=for-the-badge)](mailto:olaitan.ojo@outlook.com)
 
 </div>
@@ -244,7 +244,7 @@ I'm always interested in discussing **SRE practices**, **platform engineering**,
 
 ### 💭 "Reliability is not about preventing failures, but about failing gracefully and recovering quickly."
 
-![Profile Views](https://komarev.com/ghpvc/?username=olaitanojo&color=blueviolet&style=for-the-badge&label=Profile+Views)
+![Profile Views](https://komarev.com/ghpvc/?username=deenojo&color=blueviolet&style=for-the-badge&label=Profile+Views)
 
 ⭐ **Star my repositories if you find them helpful!**  
 🤝 **Always open to collaboration and learning opportunities**
@@ -256,8 +256,8 @@ I'm always interested in discussing **SRE practices**, **platform engineering**,
 <details>
 <summary>📊 <b>Detailed GitHub Analytics</b></summary>
 
-![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=olaitanojo&theme=tokyo-night&hide_border=true)
+![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=deenojo&theme=tokyo-night&hide_border=true)
 
-![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=olaitanojo&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=6)
+![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=deenojo&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=6)
 
 </details>
